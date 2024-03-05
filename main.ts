@@ -1,4 +1,3 @@
-
 namespace SpriteKind {
     export const Food2 = SpriteKind.create()
     export const Food3 = SpriteKind.create()
@@ -90,8 +89,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             ................................
             `, mySprite, 0, 0)
         animation.runImageAnimation(
-            spoon,
-            [img`
+        spoon,
+        [img`
             ................................
             ................................
             ................................
@@ -124,7 +123,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             ................................
             ................................
             ................................
-            `, img`
+            `,img`
             ................................
             ................................
             ................................
@@ -158,8 +157,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             ................................
             ................................
             `],
-            100,
-            false
+        100,
+        false
         )
         controller.moveSprite(mySprite, 0, 0)
         mySprite.setVelocity(0, 0)
@@ -232,7 +231,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food3, function (sprite, otherSp
     Wall.setPosition(150, 112)
     WallHealth = 15
 })
-function SetScene(text: string) {
+function SetScene (text: string) {
     sprites.destroy(Wall)
     Scene = false
     game.showLongText(text, DialogLayout.Bottom)
@@ -358,7 +357,7 @@ function SetScene(text: string) {
         1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         `)
-    tiles.setCurrentTilemap(tilemap`level2`)
+    tiles.setCurrentTilemap(tilemap`level1`)
     mySprite.setPosition(0, 80)
     controller.moveSprite(mySprite, 100, 0)
     while (Scene == false) {
@@ -508,7 +507,7 @@ scene.setBackgroundImage(img`
     fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-`)
+    `)
 GiveSpoon = 0
 let cop = sprites.create(img`
     ............8888888.............
