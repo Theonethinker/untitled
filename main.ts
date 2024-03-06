@@ -546,7 +546,7 @@ let cop = sprites.create(img`
 cop.setPosition(102, 72)
 game.showLongText("It's a good thing you are locked behind bars now", DialogLayout.Bottom)
 pause(1000)
-game.splash("Im tired im gonna get a donut")
+game.showLongText("Im tired im gonna get a donut", DialogLayout.Bottom)
 cop.setVelocity(50, 0)
 timer.after(1500, function () {
     sprites.destroy(cop, effects.none, 0)
@@ -709,9 +709,9 @@ timer.after(1500, function () {
     mySprite.setPosition(80, 80)
 })
 pause(1750)
-game.splash("I need to get out of this place")
+game.showLongText("I need to get out of this place", DialogLayout.Bottom)
 pause(500)
-game.splash("Help me look around for an exit")
+game.showLongText("Help me look around for an exit", DialogLayout.Bottom)
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
